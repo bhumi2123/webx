@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Info</title>
+</head>
+<body>
+    <h1>Weather Info for {{ weather_info.city }}</h1>
+    {% if weather_info %}
+        <p>Temperature: {{ weather_info.temperature }}°C</p>
+        <p>Description: {{ weather_info.description }}</p>
+    {% else %}
+        <p>No weather data found for the specified city.</p>
+    {% endif %}
+    <a href="/">Back to Home</a>
+</body>
+</html>
